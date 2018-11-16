@@ -1,9 +1,9 @@
 # your code goes here
 
 def begins_with_r(array)
-  flag = true
+  word = true
   array.each do |element|
-    flag = false if element[0] != "r"
+    word = false if element[0] != "r"
   end
-  flag
+  word
 end
