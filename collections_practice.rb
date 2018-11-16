@@ -9,5 +9,10 @@ def begins_with_r(array)
 end
 
 def contain_a(array)
-
+  new_array = []
+  array.each do |element|
+    if element.include?("a")
+      new_array << element
+    end
+    new_array
 end
