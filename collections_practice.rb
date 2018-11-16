@@ -40,7 +40,17 @@ def count_elements(array)
   k.merge(count: v.length)}
 end
 
-def merge_data(array1, array2)
-  array1[0].values.map.with_index {|v, i|
-  array2[i].merge(v)}
+def merge_data(keys, values)
+  new_data = []
+  keys.each do |person_name|
+    name = person_name[:first_name]
+    values.each do |person_data|
+      if person_data[name]
+        merged_person = person_data[name]
+        merged_person[:first_name] = name
+        new_data << merged_person
+      end
+    end
+  end
+  new_data
 end
