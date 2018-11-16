@@ -28,6 +28,9 @@ def first_wa(array)
 end
 
 def remove_non_strings(array)
-  array.delete_if {|element|
-  element == ""}
+  new_array = []
+  array.each do |element|
+    new_array << element if element.is_a?(string)
+  end
+  new_array
 end
