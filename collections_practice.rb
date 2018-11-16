@@ -7,3 +7,7 @@ def begins_with_r(array)
   end
   word
 end
+
+def contain_a(array)
+
+end
