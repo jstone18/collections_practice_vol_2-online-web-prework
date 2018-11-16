@@ -1,9 +1,7 @@
 # your code goes here
 
 def begins_with_r(array)
-  array.all? do |word|
-    if word == "r"
-      return true
-    end
+  array.any? do |word|
+    word == "r"
   end
 end
