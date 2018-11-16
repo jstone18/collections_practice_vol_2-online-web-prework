@@ -2,6 +2,6 @@
 
 def begins_with_r(array)
   array.each do |word|
-    word.start_with?("r")
+    if word.start_with?("r")
   end
 end
