@@ -40,6 +40,7 @@ def count_elements(array)
   k.merge(count: v.length)}
 end
 
-def merged_data
-
+def merged_data(array1, array2)
+  array1[0].values.map.with_index {|v, i|
+  array2[i].merge(v)}
 end
