@@ -2,6 +2,7 @@
 
 def begins_with_r(array)
   array.all? do |word|
-    word == "r"
+    if word == "r"
+      true
   end
 end
