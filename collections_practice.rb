@@ -28,9 +28,9 @@ def first_wa(array)
 end
 
 def remove_non_strings(array)
-  container = []
+  new_array = []
   array.each do |element|
-    container << element if element.is_a?(String)
+    new_array << element if element.is_a?(String)
   end
-  container
+  new_array
 end
